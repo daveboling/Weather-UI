@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Current Temperature
+	link(rel="stylesheet", href="/css/styles.css")
+body
+	
+
+	.wrapper
+
+		.thermo
+			div.offset(style=" height: #{offset}%;")
+			div.mercury(style=" height: #{temp}%; background: #{color};")
+	
+		.gauge
+			div 100
+			div 90
+			div 80
+			div 70
+			div 60
+			div 50
+			div 40
+			div 30
+			div 20
+			div 10
+			div 0
+
+		h1 Current temperature for zip code #{zip} is #{temp}F
+	a(href="/") Go back...
